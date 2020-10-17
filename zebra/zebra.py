@@ -1,7 +1,8 @@
 class Zebra:
 
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.swimming = True
+    def __init__(self, name, species, shift):
+        self.name = name
+        self.species = species
+        self.walking = True
+        self.shift = shift
         self.date_added = ""
