@@ -1,140 +1,24 @@
-class Donkey:
-
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.walking = True
-        self.date_added = ""
-
-
-class Chicken:
-
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.walking = True
-        self.date_added = ""
-
-
-class Sheep:
-
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.walking = True
-        self.date_added = ""
-
-
-class Tiger:
-
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.walking = True
-        self.date_added = ""
-
-
-class Elephant:
-
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.walking = True
-        self.date_added = ""
-
-
-class Monkey:
-
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.walking = True
-        self.date_added = ""
-
-
-class Snake:
-    
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.slithering = True
-        self.date_added = ""
-
-
-class Wolf:
-
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.walking = True
-        self.date_added = ""
-
-
-class Horse:
-
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.walking = True
-        self.date_added = ""
-
-
-class Whale:
-
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.swimming = True
-        self.date_added = ""
-
-
-class Fish:
-
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.swimming = True
-        self.date_added = ""
-
-
-class Gorilla:
-
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.walking = True
-        self.date_added = ""
-
-
-class Bears:
-
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.walking = True
-        self.date_added = ""
-
-
-class Zebra:
-
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.swimming = True
-        self.date_added = ""
-
-
-class Dolphin:
-
-    def __init__(self):
-        self.name = ""
-        self.species = ""
-        self.swimming = True
-        self.date_added = ""
+from bears import Bears
+from chicken import Chicken
+from dolphin import Dolphin
+from donkey import Donkey
+from elephant import Elephant
+from fish import Fish
+from gorilla import Gorilla
+from horse import Horse
+from monkey import Monkey
+from sheep import Sheep
+from snake import Snake
+from tiger import Tiger
+from whale import Whale
+from wolf import Wolf
+from zebra import Zebra
 
 
 def main():
-    harambe = Gorilla()
-    harambe.name = "Harambe"
-    harambe.species = "Baiji"
-    print(f'{harambe.name}! Species: {harambe.species} | Is {harambe.name} walking? {harambe.walking}! When was were they added? {harambe.date_added}')
+    
+    harambe = Gorilla("Harambe", "Silverback", True, "10-17-20")
+
+    print(harambe)
+
+main()
