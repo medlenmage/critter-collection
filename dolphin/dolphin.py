@@ -1,7 +1,13 @@
+from datetime import date
+
 class Dolphin:
 
-    def __init__(self):
-        self.name = ""
-        self.species = ""
+    def __init__(self, name, species, swimming, food):
+        self.name = name
+        self.species = species
         self.swimming = True
-        self.date_added = ""
+        self.date_added = date.today()
+        self.food = food
+
+    def feed(self):
+      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
