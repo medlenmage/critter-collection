@@ -13,12 +13,26 @@ from tiger import Tiger
 from whale import Whale
 from wolf import Wolf
 from zebra import Zebra
+from pettingZoo import PettingZoo
+from snakePit import snakePit
+from wetlands import wetlands
 
 
 def main():
-    
-    harambe = Gorilla("Harambe", "Silverback", True, "10-17-20")
 
-    print(harambe)
+    castle_pets = PettingZoo("Castle Pets")
+    shrek_swamp = wetlands("Shrek's Swamp")
+    sneaky_snakies = snakePit("Sneaky Snakes")
+
+    donkey = Donkey("Donkey", "donkey", "morning", "grass")
+    slithers = Snake("Slithers", "python", "mice")
+    nemo = Fish("Nemo", "clown fish", "pellets")
+
+
+    castle_pets.animals.append(donkey)
+    sneaky_snakies.animals.append(slithers)
+    shrek_swamp.animals.append(nemo)
+
+    print(donkey)
 
 main()
