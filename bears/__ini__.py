@@ -1,1 +1,0 @@
-from .bears import Bears
