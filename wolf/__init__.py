@@ -1,1 +1,0 @@
-from .wolf import Wolf

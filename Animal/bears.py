@@ -1,11 +1,13 @@
 from .animal import Animal
 from datetime import date
+from movements import Swimming, Walking
 
-class Bears(Animal):
+class Bears(Animal, Swimming, Walking):
 
     def __init__(self, name, species, food, chip_num):
         super().__init__(name, species, food, chip_num)
-        self.walking = True
+        Swimming.__init__(self)
+        Walking.__init__(self)
 
     # specifies what an object representation should be(this case a string)
     def __str__(self):
