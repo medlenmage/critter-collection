@@ -1,11 +1,11 @@
-from .animal import Animal
+from animal import Animal
 from datetime import date
 from movements import Swimming, Walking
 
 class Bears(Animal, Swimming, Walking):
 
-    def __init__(self, name, species, food, chip_num):
-        super().__init__(name, species, food, chip_num)
+    def __init__(self, name, species, food, chip_number):
+        Animal.__init__(self, name, species, food, chip_number)
         Swimming.__init__(self)
         Walking.__init__(self)
 

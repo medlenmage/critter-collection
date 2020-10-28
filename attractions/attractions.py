@@ -12,7 +12,7 @@ class Attraction:
         self.animals.remove(animal)
 
     def __str__(self):
-        return f'{self.name} ({len(self)} animals)'
+        return f'{self.attraction_name} ({len(self)} animals)'
 
     def __len__(self):
         return len(self.animals)
